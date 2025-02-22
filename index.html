@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chatbot & Candidate Template</title>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway|Ubuntu&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+<body>
+  <nav class="navbar">
+    <a href="#">Search</a>
+    <a href="#">Write</a>
+    <a href="#">Sign up</a>
+    <a href="#">Sign in</a>
+  </nav>
+  <div class="container">
+    <div id="candidateGrid" class="grid"></div>
+  </div>
+  <footer>
+    &copy; 2025 Análisis de Propuestas de Candidatos
+  </footer>
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <button class="close-btn">&times;</button>
+      <h2 id="modal-title"></h2>
+      <div id="modal-body"></div>
+    </div>
+  </div>
+  <div id="chatSidebar">
+    <header>Chat History</header>
+    <div id="chatHistory">
+      <div class="inner" id="chatInner"></div>
+    </div>
+  </div>
+  <div id="chatWindow">
+    <header>Chat</header>
+    <div class="chat-log" id="chatLog">
+      <p><strong>Bot:</strong> Hello Coder, welcome to our chat!</p>
+    </div>
+    <form id="chatForm">
+      <input type="text" id="chatInput" placeholder="Enter Your Message">
+      <button type="submit">Send</button>
+    </form>
+  </div>
+  <div class="chat-box" id="chatBox">
+    <div class="chat-box-header">
+      <h3>Message Us</h3>
+      <p id="closeChat">&times;</p>
+    </div>
+    <div class="chat-box-body" id="chatBody">
+      <div class="chat-box-body-receive">
+        <p>Hello Coder, Welcome to our Chat!</p>
+        <span>12:00</span>
+      </div>
+      <div class="chat-box-body-send">
+        <p>Hi there!</p>
+        <span>12:01</span>
+      </div>
+    </div>
+    <div class="chat-box-footer">
+      <button id="addExtra"><i class="fa fa-plus"></i></button>
+      <input type="text" id="boxChatInput" placeholder="Enter Your Message">
+      <i class="send far fa-paper-plane" id="sendBoxChat"></i>
+    </div>
+  </div>
+  <div class="chat-button" id="chatButton">Message Us</div>
+  <script src="script.js"></script>
+</body>
+</html>
